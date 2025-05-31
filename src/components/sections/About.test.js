@@ -12,7 +12,8 @@ describe('About', () => {
 
   it('renders about images placeholders', () => {
     render(<About />);
-    expect(screen.getByText(/adrian/i)).toBeInTheDocument();
-    expect(screen.getByText(/mario/i)).toBeInTheDocument();
+    // Accept multiple elements for 'Adrian' and 'Mario'
+    expect(screen.getAllByText(/adrian/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/mario/i).length).toBeGreaterThan(0);
   });
 });

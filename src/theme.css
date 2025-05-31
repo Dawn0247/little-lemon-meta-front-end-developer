@@ -1,0 +1,157 @@
+/*
+  Custom Bootstrap overrides and theme for Little Lemon
+  Colors: 
+    Primary: #495E57 (dark green)
+    Accent: #F4CE14 (yellow)
+    Text: #edefee (off-white)
+  Font: 'Montserrat', sans-serif
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --ll-primary: #495E57;
+  --ll-accent: #F4CE14;
+  --ll-text: #edefee;
+  --ll-bg: #495E57;
+  --ll-font: 'Montserrat', sans-serif;
+}
+
+body {
+  background: var(--ll-bg);
+  color: var(--ll-text);
+  font-family: var(--ll-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ll-accent);
+  font-family: var(--ll-font);
+  font-weight: 700;
+}
+
+.btn, .btn-primary, .btn-success, .btn-warning {
+  border-radius: 2rem;
+  font-family: var(--ll-font);
+  font-weight: 700;
+  background: var(--ll-accent);
+  color: var(--ll-primary);
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover, .btn:focus {
+  background: #ffe66d;
+  color: var(--ll-primary);
+}
+
+input, textarea, select {
+  border-radius: 0.75rem;
+  border: 1.5px solid #edefee;
+  background: #fff;
+  color: #222;
+  padding: 0.75rem 1rem;
+  font-family: var(--ll-font);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--ll-accent);
+  border-color: var(--ll-accent);
+}
+
+.navbar, .navbar-light, .navbar-dark {
+  background: #fff !important;
+  color: var(--ll-primary) !important;
+  font-family: var(--ll-font);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: var(--ll-primary) !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+  color: #fff !important;
+  background: var(--ll-accent);
+  border-radius: 1rem;
+}
+
+.hero-section {
+  background: var(--ll-primary) !important;
+  color: var(--ll-text) !important;
+}
+.hero-section h1, .hero-section h2, .hero-section h3, .hero-section h4, .hero-section h5, .hero-section h6 {
+  color: var(--ll-accent);
+}
+.hero-section .btn {
+  background: var(--ll-accent);
+  color: var(--ll-primary);
+}
+
+.footer {
+  background: #222;
+  color: var(--ll-text);
+  font-family: var(--ll-font);
+}
+
+.card {
+  border-radius: 1.25rem;
+  background: #fff;
+  color: #222;
+  font-family: var(--ll-font);
+}
+
+/* Booking Section Styles (migrated from BookingSection.css) */
+.booking-section {
+  background: var(--ll-primary);
+  color: var(--ll-text);
+}
+.booking-section h2, .booking-section h3 {
+  color: var(--ll-accent);
+}
+.booking-section .form-label {
+  color: var(--ll-text);
+  font-weight: 600;
+}
+.booking-section .form-control, .booking-section .form-select, .booking-section textarea {
+  background: #fff;
+  color: #222;
+  border-radius: 0.75rem;
+  border: 1.5px solid #edefee;
+  margin-bottom: 1rem;
+}
+.booking-section .btn-warning {
+  background: var(--ll-accent);
+  color: var(--ll-primary);
+  border-radius: 2rem;
+  font-weight: 700;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.booking-section .btn-warning.active, .booking-section .btn-warning:focus {
+  background: #ffe66d;
+  color: var(--ll-primary);
+  outline: 2px solid var(--ll-accent);
+}
+.booking-section .btn-secondary {
+  background: #edefee;
+  color: var(--ll-primary);
+  border: none;
+}
+.booking-section .btn-secondary:hover, .booking-section .btn-secondary:focus {
+  background: #d4d4d4;
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    gap: 0.5rem;
+  }
+  .container, .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+  }
+  .booking-section .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

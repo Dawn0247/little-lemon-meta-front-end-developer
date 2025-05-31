@@ -1,0 +1,45 @@
+.booking-section {
+  background: var(--ll-primary);
+  color: var(--ll-text);
+}
+.booking-section h2, .booking-section h3 {
+  color: var(--ll-accent);
+}
+.booking-section .form-label {
+  color: var(--ll-text);
+  font-weight: 600;
+}
+.booking-section .form-control, .booking-section .form-select, .booking-section textarea {
+  background: #fff;
+  color: #222;
+  border-radius: 0.75rem;
+  border: 1.5px solid #edefee;
+  margin-bottom: 1rem;
+}
+.booking-section .btn-warning {
+  background: var(--ll-accent);
+  color: var(--ll-primary);
+  border-radius: 2rem;
+  font-weight: 700;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.booking-section .btn-warning.active, .booking-section .btn-warning:focus {
+  background: #ffe66d;
+  color: var(--ll-primary);
+  outline: 2px solid var(--ll-accent);
+}
+.booking-section .btn-secondary {
+  background: #edefee;
+  color: var(--ll-primary);
+  border: none;
+}
+.booking-section .btn-secondary:hover, .booking-section .btn-secondary:focus {
+  background: #d4d4d4;
+}
+@media (max-width: 768px) {
+  .booking-section .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

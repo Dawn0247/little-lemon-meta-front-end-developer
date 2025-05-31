@@ -7,6 +7,6 @@ describe('Highlights', () => {
     render(<Highlights />);
     expect(screen.getByText(/greek salad/i)).toBeInTheDocument();
     expect(screen.getByText(/bruschetta/i)).toBeInTheDocument();
-    expect(screen.getByText(/lemon dessert/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/lemon dessert/i).length).toBeGreaterThan(0);
   });
 });

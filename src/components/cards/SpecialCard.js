@@ -7,7 +7,7 @@ const SpecialCard = ({ title, price, description, image, link }) => (
       {image ? (
         <img src={image} alt={title} className="img-fluid rounded" style={{ maxHeight: '180px', objectFit: 'cover' }} />
       ) : (
-        <div className="bg-light rounded d-flex align-items-center justify-content-center" style={{ height: '180px', color: '#888' }}>
+        <div className="bg-light rounded d-flex align-items-center justify-content-center" style={{ height: '180px', color: '#888' }} role="img" aria-label={`Placeholder image for ${title}`}>
           Image
         </div>
       )}

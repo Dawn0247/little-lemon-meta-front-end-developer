@@ -8,7 +8,9 @@ const TestimonialCard = ({ name, rating, review, photo }) => (
       {photo ? (
         <img src={photo} alt={name} className="rounded-circle img-fluid" style={{width: 64, height: 64, objectFit: 'cover'}} />
       ) : (
-        <div className="bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white" style={{width: 64, height: 64}}>Photo</div>
+        <div className="bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white" style={{width: 64, height: 64}} role="img" aria-label={`Placeholder photo for ${name}`}>
+          Photo
+        </div>
       )}
     </div>
     <div className="testimonial-content">

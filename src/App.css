@@ -1,5 +1,14 @@
+/*
+  Remove old/unused styles and ensure App uses the new theme.
+*/
 .App {
-  text-align: center;
+  min-height: 100vh;
+  background: var(--ll-bg);
+  color: var(--ll-text);
+  font-family: var(--ll-font);
+  /* Add top margin to accommodate fixed navbar */
+  margin-top: 70px;
+  scroll-behavior: smooth;
 }
 
 .App-logo {
@@ -35,4 +44,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+section {
+  scroll-margin-top: 80px; /* Offset for fixed navbar */
 }
