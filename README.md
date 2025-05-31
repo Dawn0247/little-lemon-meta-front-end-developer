@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Little Lemon Capstone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the Little Lemon restaurant web application, built as a capstone project for the Coursera Meta Front-End Developer program.
 
-## Available Scripts
+## Features
+- Responsive design with a fixed navigation bar
+- Hero section with restaurant imagery
+- Menu highlights with images
+- Online booking and ordering sections
+- About section featuring restaurant owners
+- Testimonials and footer
 
-In the project directory, you can run:
+## Project Structure
+- `src/assets/` — Stock images and assets used throughout the site
+- `src/components/` — React components (cards, sections, dialogs)
+- `src/App.js` — Main application component
+- `public/` — Static files and the main HTML template
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- npm (v8 or higher)
+
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone <your-repo-url>
+   cd little-lemon-capstone
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Running the App
+Start the development server:
+```sh
+npm start
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Running Tests
+```sh
+npm test
+```
 
-### `npm test`
+### Building for Production
+```sh
+npm run build
+```
+The optimized build will be in the `build/` folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Assets & Images
+All stock images are located in `src/assets/`. You can update or replace them as needed. Images are imported directly into React components for best performance and cropping.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Customization
+- To change images, replace files in `src/assets/` and update imports in components.
+- To update content, edit the relevant React components in `src/components/sections/` or `src/components/cards/`.
 
 ## Learn More
+- [React documentation](https://reactjs.org/)
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2025 Little Lemon. For educational use only.
