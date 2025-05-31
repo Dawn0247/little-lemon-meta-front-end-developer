@@ -1,4 +1,6 @@
 import React from 'react';
+import adrianImg from '../../assets/about adrian.avif';
+import marioImg from '../../assets/about mario.avif';
 
 const About = () => (
   <section className="about-section py-5 bg-white">
@@ -17,18 +19,18 @@ const About = () => (
           </p>
         </div>
         <div className="col-md-6 d-flex justify-content-center gap-3">
-          <div
-            className="about-photo bg-secondary rounded-3 d-flex align-items-center justify-content-center text-white fw-bold me-2"
-            style={{ width: 120, height: 160, fontSize: '1.2rem' }}
-          >
-            Adrian
-          </div>
-          <div
-            className="about-photo bg-secondary rounded-3 d-flex align-items-center justify-content-center text-white fw-bold"
-            style={{ width: 120, height: 160, fontSize: '1.2rem' }}
-          >
-            Mario
-          </div>
+          <img
+            src={adrianImg}
+            alt="Adrian - Owner"
+            className="about-photo bg-secondary rounded-3 me-2"
+            style={{ width: 120, height: 160, objectFit: 'cover', fontSize: '1.2rem' }}
+          />
+          <img
+            src={marioImg}
+            alt="Mario - Owner"
+            className="about-photo bg-secondary rounded-3"
+            style={{ width: 120, height: 160, objectFit: 'cover', fontSize: '1.2rem' }}
+          />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import heroBanner from '../../assets/hero banner lemon restaurant.avif';
 
 const HeroSection = () => (
   <section className="hero-section bg-light py-5">
@@ -11,8 +12,11 @@ const HeroSection = () => (
           <button className="btn btn-success btn-lg mt-3">Reserve a Table</button>
         </div>
         <div className="col-md-6 text-center">
-          {/* Placeholder for hero image */}
-          <div className="bg-secondary rounded-3" style={{width: '100%', height: '250px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '1.5rem'}} role="img" aria-label="Placeholder image for Little Lemon Chicago">Image</div>
+          <img
+            src={heroBanner}
+            alt="Little Lemon Chicago"
+            style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '1rem' }}
+          />
         </div>
       </div>
     </div>

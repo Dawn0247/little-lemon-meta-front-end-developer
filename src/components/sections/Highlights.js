@@ -1,26 +1,29 @@
 import React from 'react';
 import SpecialCard from '../cards/SpecialCard';
+import greekSalad from '../../assets/specials greek salad.avif';
+import bruschetta from '../../assets/specials bruschetta.avif';
+import lemonDessert from '../../assets/specials lemon dessert.avif';
 
 const specials = [
   {
     title: 'Greek Salad',
     price: '$12.99',
     description: 'Crispy lettuce, peppers, olives, and feta cheese, garnished with garlic and rosemary croutons.',
-    image: '',
+    image: greekSalad,
     link: '#',
   },
   {
     title: 'Bruschetta',
     price: '$5.99',
     description: 'Grilled bread smeared with garlic and seasoned with salt and olive oil.',
-    image: '',
+    image: bruschetta,
     link: '#',
   },
   {
     title: 'Lemon Dessert',
     price: '$4.99',
     description: 'Authentic homemade lemon dessert with a tangy twist.',
-    image: '',
+    image: lemonDessert,
     link: '#',
   },
 ];
