@@ -9,8 +9,10 @@ jest.mock('../dialogs/AlertDialog', () => ({
 }));
 
 describe('BookingSection', () => {
+  const mockTimes = ['6:00pm', '7:00pm', '8:00pm'];
+
   test('renders initial booking form', () => {
-    render(<BookingSection />);
+    render(<BookingSection times={mockTimes} />);
     expect(screen.getByText(/Reserve a Table/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/When/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/How Many/i)).toBeInTheDocument();
@@ -19,14 +21,14 @@ describe('BookingSection', () => {
   });
 
   test('enables Next button when date and time are selected', () => {
-    render(<BookingSection />);
+    render(<BookingSection times={mockTimes} />);
     const timeButton = screen.getByRole('button', { name: /6:00pm/i });
     fireEvent.click(timeButton);
     expect(screen.getByRole('button', { name: /Next Step/i })).toBeEnabled();
   });
 
   test('shows validation errors on details step', async () => {
-    render(<BookingSection />);
+    render(<BookingSection times={mockTimes} />);
     fireEvent.click(screen.getByRole('button', { name: /6:00pm/i }));
     fireEvent.click(screen.getByRole('button', { name: /Next Step/i }));
     fireEvent.click(screen.getByRole('button', { name: /Confirm Booking/i }));
@@ -44,7 +46,7 @@ describe('BookingSection', () => {
   });
 
   test('submits form and shows confirmation dialog', async () => {
-    render(<BookingSection />);
+    render(<BookingSection times={mockTimes} />);
     fireEvent.click(screen.getByRole('button', { name: /6:00pm/i }));
     fireEvent.click(screen.getByRole('button', { name: /Next Step/i }));
     fireEvent.change(screen.getByLabelText(/First Name/i), { target: { value: 'John' } });

@@ -1,0 +1,36 @@
+
+> little-lemon-capstone@0.1.0 test
+> react-scripts test
+
+PASS src/components/sections/BookingSection.test.js
+  BookingSection
+    √ renders initial booking form (51 ms)
+    √ enables Next button when date and time are selected (24 ms)
+    √ shows validation errors on details step (39 ms)
+    √ submits form and shows confirmation dialog (46 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        1.491 s
+Ran all test suites related to changed files.
+
+PASS src/components/sections/Footer.test.js
+PASS src/components/cards/SpecialCard.test.js
+PASS src/components/sections/About.test.js
+PASS src/components/sections/Highlights.test.js
+PASS src/components/sections/HeroSection.test.js
+PASS src/components/sections/BookingSection.test.js
+PASS src/components/cards/Card.test.js
+PASS src/components/cards/TestimonialCard.test.js
+PASS src/components/sections/NavigationBar.test.js
+PASS src/components/sections/Testimonials.test.js
+
+Test Suites: 10 passed, 10 total
+Tests:       21 passed, 21 total
+Snapshots:   0 total
+Time:        2.021 s
+Ran all test suites.
+
+
+[1B[J
