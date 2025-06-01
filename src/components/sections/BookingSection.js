@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import AlertDialog from '../dialogs/AlertDialog';
 import * as Yup from 'yup';
 
-const times = [
-  '6:00pm', '6:30pm', '7:00pm', '7:30pm', '8:00pm', '8:30pm'
-];
-
+// form validation
 const bookingSchema = Yup.object().shape({
   date: Yup.string().required('Date is required'),
   guests: Yup.number().min(1).max(10).required('Number of guests is required'),
@@ -20,7 +17,7 @@ const bookingSchema = Yup.object().shape({
   info: Yup.string()
 });
 
-const BookingSection = () => {
+const BookingSection = ({ times }) => {
   const today = new Date().toISOString().split('T')[0];
   const [step, setStep] = useState(1);
   const [form, setForm] = useState({

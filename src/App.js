@@ -7,6 +7,10 @@ import About from './components/sections/About';
 import Footer from './components/sections/Footer';
 import './App.css';
 
+const times = [
+  '6:00pm', '6:30pm', '7:00pm', '7:30pm', '8:00pm', '8:30pm'
+];
+
 function App() {
   return (
     <div className="App" id="home">
@@ -14,7 +18,7 @@ function App() {
       <section id="hero"><HeroSection /></section>
       <section id="menu"><Highlights /></section>
       <section id="testimonials"><Testimonials /></section>
-      <section id="booking"><BookingSection /></section>
+      <section id="booking"><BookingSection times={times} /></section>
       <section id="about"><About /></section>
       <section id="order"><Footer /></section>
     </div>
